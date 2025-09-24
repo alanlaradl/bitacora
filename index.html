@@ -9,13 +9,18 @@
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
     body{
-        background-color: rgb(237, 253, 233);
+        background: #edfded;
+        background: linear-gradient(180deg,#edfded 0%, #99cd99 80%);
         margin: 0px;
         padding: 0px;
     }
-    header{
+    header{ /* TITULO */
+        text-shadow: 5px 3px 8px rgba(216,255,182,0.59);
         width: auto;
         height: 100px;
+        background-image: url(img/flores.jpg); 
+        background-size:auto;
+        background-position: center;
         background-color: rgb(49, 47, 47);
         margin-bottom: 0px;
         margin-top: 0px;
@@ -27,7 +32,37 @@
             right: 25px; 
         }
     }
-    p{
+    ol{
+        right: 0px;
+        top: 5px;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        width: 160px;
+        height: auto;
+        padding-top: 17px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        background-color: #587265;
+        display: block;
+        position:fixed;
+        list-style-type: "✦​"; 
+        border-radius: 30px 0px 0px 30px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        a{
+            text-align: left;
+            color: rgb(255, 255, 255);
+        }
+        li{
+            padding-left: 8px;
+        }
+
+    }
+    p{   
         color: rgb(255, 255, 255);
         font-size: 70px;
         font-family: "DM Sans", sans-serif;
@@ -54,7 +89,7 @@
         width: auto;
         height: auto;
     }
-    article{
+    article{  /* AQUI VA CADA TEMA */
         font-size: 20px;
         font-family: "DM Sans", sans-serif;
         font-weight: 500;
@@ -74,7 +109,7 @@
             display: block;
             border-radius: 30px;
             margin-top: 30px;
-            max-height: 500px;
+            max-height: 450px;
         }
         p{
             font-family: Arial, Helvetica, sans-serif;
@@ -88,14 +123,22 @@
             color: rgb(174, 229, 172);
         }
     }
-    .articles{
+    .articles{ /* ESTO ES PARA EL ORDEN EN FORMA DE GRID */
         display: grid;
         padding: auto;
         grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
         margin-left: 50px;
         margin-right: auto;
     }
-    .IA{
+    .newarticles{ /* ESTO ES PARA EL ORDEN EN FORMA DE GRID */
+        display: grid;
+        padding: auto;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        margin-left: 50px;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .IA{    /* AQUI VA EL TEMA DE LA IA */
         background-color: cadetblue;
         height: 850px;
         width: auto;
@@ -133,12 +176,37 @@
             margin-right: auto;
         }
     }
+    #TEMASNUEVOS{
+        color: rgb(255, 255, 255);
+        font-size: 70px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 900;
+        text-align: center;
+        font-style: italic;
+        text-shadow: 5px 3px 8px rgba(216,255,182,0.59);
+        width: auto;
+        height: 100px;
+        background-image: url(img/flores2.jpg); 
+        background-size:auto;
+        background-position: center;
+        background-color: rgb(49, 47, 47);
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
 </style>
 <body>
     <header>
-        <p>✧ BITACORA - DISEÑO WEB ✧</p>
+        <p id="INICIO">✧ BITACORA - DISEÑO WEB ✧</p>
         <a target="_blank" href="https://www.etsy.com/mx/market/chubby_crocodile_figurine"><img src="img/cocodrilotres.png"> </a>
     </header>
+    <ol>  
+           <li> <a href="#INICIO"> REGRESAR A INICIO </a> </li>  
+           <li> <a href="#FORO"> FORO IA </a> </li> 
+           <li> <a href="#TEMASNUEVOS"> TEMAS NUEVOS </a> </li>
+            
+ 
+
+    </ol>
     <section>
     <div class="articles">
         <article>
@@ -192,16 +260,33 @@
             <p> Tuvimos como tarea realizar un logotipo hecho con nuestras propias manos y el reto fue compararlo con un logotipo realizado por la IA para observar la diferencia que hay entre las dos propuestas.</p>
             <a target="_blank" href="img/raizurbana.png"> <img src="img/raizurbana.png"></a>
         </article>
-    </div>
-    <div class="IA">
+        </div>
+    <div id="FORO" class="IA">
             <h1>˗ˏˋ La IA en el Diseño ˎˊ˗</h1>
             <p> El pasado 20 de Agosto, en el gimnasio universitario de la UACJ, se dio a cabo la conferencia "FORO UACJ: IA" en donde diversos profesores daban platicas y exponian el como el uso de la inteligencia artificial nos presenta un gran número de ventajas y el como debemos darle la bienvenida con los brazos abiertos y no rechazarla ni tenerle miedo.
             <br></br>
                 Esta conferencia generó una gran cantidad de incomformidad en los estudiantes debido a que se promocionaba demasiado su utilización en procesos creativos y mas que como una herramienta la trataban como un reemplazo, lo cual termina siendo de mal gusto siendo que justo los alumnos que asistieron a la conferencia son los que estan intentando luchar contra este tipo de practicas y el uso maldebido de la IA en nuestros sectores de estudio y trabajo.
             </p>
             <iframe width="920" height="500" src="https://www.youtube.com/embed/rzqtBGQTG7g?si=ReAbRaBkwRDQ0wcu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    </div>
+   </div>
+     <h1 id="TEMASNUEVOS"> TEMAS NUEVOS </h1>
+        <div class="newarticles">
+            <article>
+            <h1>● BOCETO ●</h1>
+             <p> Tuvimos la tarea de realizar un boceto a mano de como reimaginariamos el layout de la pagina oficial de la UACJ, haciendo que toda esta cupiera en una sola pagina.</p>
+             <a target="_blank" href="img/BOCETO.png"> <img src="img/BOCETO.png"></a>
+        </article>
+            <article>
+            <h1>● WIREFRAMES ●</h1>
+            <p> Convertimos el boceto a lapiz en un boceto fino hecho digitalmente en figma. </p>
+            <a target="_blank" href="img/WIREFRAMES.png"> <img src="img/WIREFRAMES.png"></a>
+        </article>
+            <article>
+            <h1>● MAPA DE SITIO ●</h1>
+            <p> Desglosamos visualmente el wireframe, indicando que menus se abririan al clickear en ciertas opciones y que partes pueden moverse ya sea horizontalmente o verticalmente, esto para tener una idea completa de como va a funcionar la pagina antes de codificarla.</p>
+            <a target="_blank" href="img/MAPADELSITIO.png"> <img src="img/MAPADELSITIO.png"></a>
+        </article>
+        </div>
     <nav>
     </nav>
     </section>
