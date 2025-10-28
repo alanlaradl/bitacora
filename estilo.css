@@ -315,11 +315,11 @@
         }
     }
     .NORMAL{
-        width: 400px;
+        width: 300px;
         height: 20px;
     }
     .OPINION{
-        width: 400px;
+        width: 450px;
         height: 120px;
     }
     .articles{ /* ESTO ES PARA EL ORDEN EN FORMA DE GRID */
