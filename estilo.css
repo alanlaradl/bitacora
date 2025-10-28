@@ -231,12 +231,18 @@
                 text-align: center;
                 color: white;
             }
+        border-radius: 30px;
         display: block;
         width:450px;
         height: 450px;
         background-color: #95bd7a;
         margin-top: 10%;
         margin-left: 10%;
+        transition: 0.3s ease-in-out;
+        }
+        .CUADRO1:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
         }
         .CUADRO2{
            .colorcitos{
@@ -246,12 +252,18 @@
                 text-align: center;
                 color: white;
             }
+        border-radius: 30px;    
         display: block;
         width:450px;
         height: 450px;
         background-color: cornflowerblue;
         margin-top: 10%;
         margin-left: 10%;
+        transition: 0.3s ease-in-out;
+        }
+        .CUADRO2:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
         }
         .CUADRO3{
            .colorcitos{
@@ -261,12 +273,18 @@
                 text-align: center;
                 color: white;
             }
+        border-radius: 30px;
         display: block;
         width:450px;
         height: 450px;
         background-color: rgba(37, 150, 190) ;
         margin-top: 10%;
         margin-left: 10%;
+        transition: 0.3s ease-in-out;
+        }
+        .CUADRO3:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
         }
         .CUADRO4{
            .colorcitos{
@@ -276,12 +294,18 @@
                 text-align: center;
                 color: white;
             }
+        border-radius: 30px;
         display: block;
         width:450px;
         height: 450px;
         background-color: rgba(201, 255, 51, 0.5);
         margin-top: 10%;
         margin-left: 10%;
+        transition: 0.3s ease-in-out;
+        }
+        .CUADRO4:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
         }
         .CUADRO5{
            .colorcitos{
@@ -291,12 +315,18 @@
                 text-align: center;
                 color: white;
             }
+        border-radius: 30px;
         display: block;
         width:450px;
         height: 450px;
         background-color: hsl(91, 50%, 64%);
         margin-top: 10%;
         margin-left: 10%;
+        transition: 0.3s ease-in-out;
+        }
+        .CUADRO5:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
         }
         .CUADRO6{
            .colorcitos{
@@ -306,12 +336,18 @@
                 text-align: center;
                 color: white;
             }
+        border-radius: 30px;
         display: block;
         width:450px;
         height: 450px;
         background-color: hsla(175, 100%, 60%, 0.5);
         margin-top: 10%;
         margin-left: 10%;
+        transition: 0.3s ease-in-out;
+        }
+        .CUADRO6:hover{
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
         }
     }
     .NORMAL{
