@@ -38,6 +38,8 @@
             text-align: center;
             font-size: 5vw;
             margin:auto;
+            transition: transform 0.1s ease-in-out;
+
          }
          p:hover{
             transform: scale(1.1);     
@@ -66,7 +68,7 @@
         font-family: "DM Sans", sans-serif;
         font-weight: 900;
         font-style: italic;
-        width: 160px;
+        width: 170px;
         height: auto;
         padding-top: 17px;
         padding-bottom: 20px;
