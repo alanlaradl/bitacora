@@ -10,6 +10,7 @@
 <body>
     <header>
         <p id="INICIO">✧ BITACORA - DISEÑO WEB ✧</p>
+        <div class="fondo"></div>
         <a target="_blank" href="https://www.etsy.com/mx/market/chubby_crocodile_figurine"><img src="img/cocodrilotres.png"> </a>
     </header>
     <ol>  
@@ -24,6 +25,27 @@
 
 
     </ol>
+      <div class="POPUP"> 
+        <div class="overlay" id="overlay"></div>
+        <div class="popup" id="popup">
+        <h2>Bienvenido/a a mi página! •ᴗ• </h2>
+        <p>Este sitio web utiliza cookies para mejorar su experiencia de usuario.</p>
+        <p></p>
+        <p> Al cerrar esta ventana, acepta nuestros terminos y condiciones en cuanto al uso de cookies.</p>
+        <button id="close-popup">CERRAR</button>
+        </div>
+        <script>
+                            window.onload = function() {
+                            document.getElementById("overlay").style.display = "block";
+                            document.getElementById("popup").style.display = "block";
+                            }
+
+                            document.getElementById("close-popup").onclick = function() {
+                            document.getElementById("overlay").style.display = "none";
+                            document.getElementById("popup").style.display = "none";
+                            }
+        </script>      
+     </div>        
     <section>
     <div class="articles">
         <article>
@@ -143,6 +165,10 @@
         <p1>
             Bitacora hecha por Alan Lara para la clase de Diseño Web - Grupo B  -  10/Sep/2025
         </p1>
+         <form action="">
+        <input class="CORREO" placeholder="Ingresa tu correo electronico"  type="text" id="name"><br>
+        <input class="ENVIAR" type="button" value="ENVIAR">
+        <img src="img/logologo-02.png">
     </footer>
 </body>
 </html>
