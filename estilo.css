@@ -62,7 +62,9 @@
         padding-top: 20px;
         background-image: url(img/flores.jpg); 
         background-size:auto;
-        background-position: center;
+        background-position: bottom;
+        background-attachment: fixed;
+        
         filter: blur(2px) brightness(90%) opacity(89%);
         background-color: rgb(49, 47, 47);
         margin-bottom: 0px;
@@ -301,6 +303,7 @@
         opacity: 100%;
     }
     }
+    
     article{  /* AQUI VA CADA TEMA */
         font-size: 20px;
         font-family: "DM Sans", sans-serif;
