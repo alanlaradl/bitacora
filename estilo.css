@@ -1,23 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
-
+    @font-face {
+    font-family: Barle; /* set name */
+    src: url(fonts/BarleOutline-Regular.otf); /* url of the font */
+    }
     html {
         scroll-behavior: smooth;
     }
     body{
 
-    --s: 164px; /* control the size*/
-    --c1: #ebeec4;
-    --c2: #b1d2a3;
-    --_g: #0000 52%,var(--c1) 54% 57%,#0000 59%; 
-    background: 
-    radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
-    radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
-    radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
-    radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
-    var(--c2);
-    background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+    background-color: #b1d2a3;
+opacity: 1;
+background-image: radial-gradient(#fcf3d7 1.7000000000000002px, #b1d2a3 1.7000000000000002px);
+background-size: 34px 34px;
     margin: 0px;
     padding: 0px;
     }
@@ -27,9 +23,10 @@
             width: 1500px;
             margin: 0 auto;
             z-index: 20;
+            font-family: DM Sans;
             font-style: normal;
             text-align: center;
-            font-size: 5vw;
+            font-size: 4.6vw;
             position: absolute;
             transition: transform 0.1s ease-in-out;
             left: 10%;
@@ -65,7 +62,7 @@
         background-position: bottom;
         background-attachment: fixed;
         
-        filter: blur(2px) brightness(90%) opacity(89%);
+        filter: blur(3px) brightness(90%) opacity(89%);
         background-color: rgb(49, 47, 47);
         margin-bottom: 0px;
         margin-top: 0px;
@@ -331,6 +328,7 @@
             margin-top: 30px;
             max-height: 450px;
             object-fit: cover;
+            transition: transform 0.1s ease-in-out;
         }
             img:hover { /* PERMITE QUE LAS IMAGENES TENGAN UN LIGERO MOVIMIENTO */
                             transform: translateY(-10px); 
